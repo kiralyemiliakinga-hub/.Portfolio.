@@ -1,77 +1,101 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zsolt Király – Animation Works</title>
 
-<title>Zsolt Király – Animation Works</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #1e1e1e;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-<style>
-body {
-    margin: 0;
-    background-color: #121212;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+    header {
+      padding: 40px 20px;
+    }
 
-header {
-    padding: 60px 20px 30px;
-}
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
 
-h1 {
-    font-size: 42px;
-    margin: 0;
-    letter-spacing: 2px;
-}
+    header p {
+      color: #bbbbbb;
+      margin-top: 10px;
+    }
 
-.subtitle {
-    color: #bbbbbb;
-    margin-top: 10px;
-    font-size: 18px;
-}
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
 
-.video-card {
-    margin: 50px auto;
-    max-width: 900px;
-}
+    .project {
+      margin: 40px 0;
+      padding: 20px;
+      background-color: #2a2a2a;
+      border-radius: 12px;
+    }
 
-video {
-    width: 90%;
-    max-width: 800px;
-    border-radius: 12px;
-}
+    .project h2 {
+      margin-bottom: 5px;
+    }
 
-.date {
-    color: #888;
-    font-size: 14px;
-    margin-top: 10px;
-}
+    .date {
+      color: #bbbbbb;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
 
-.description {
-    color: #ccc;
-    font-size: 16px;
-    margin-top: 5px;
-}
-</style>
+    .desc {
+      color: #dddddd;
+      margin-bottom: 15px;
+    }
 
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <header>
     <h1>Zsolt Király – Animation Works</h1>
-    <div class="subtitle">3D Animation student | Blender works</div>
-</header>
+    <p>3D Animation Portfolio</p>
+  </header>
 
-<div class="video-card">
-    <video controls>
+  <div class="container">
+
+    <div class="project">
+      <h2>Animation 1</h2>
+      <p class="date">2026.04.05</p>
+      <p class="desc">First Blender animation test – character acting and basic motion practice.</p>
+
+      <video controls>
         <source src="animation.mp4" type="video/mp4">
-    </video>
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-    <div class="date">2026. 04. 05 – Animation Test</div>
-    <div class="description">First Blender character animation practice.</div>
-</div>
+    <div class="project">
+      <h2>Animation 2</h2>
+      <p class="date">2026.04.06</p>
+      <p class="desc">Facial animation test using Blender String rig – emotion transitions and acting study.</p>
+
+      <video controls>
+        <source src="animation 2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
 
 </body>
 </html>
